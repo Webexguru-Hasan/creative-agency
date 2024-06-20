@@ -1,0 +1,1334 @@
+
+/* Creative agency Global CSS here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+/* Creative agency Custom Font Link here */
+
+@font-face {
+    font-family: lora-500;
+    src: url(../fonts/lora/Lora-Medium.ttf);
+}
+@font-face {
+    font-family: inter-600;
+    src: url(../fonts/inter/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: inter-500;
+    src: url(../fonts/inter/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: inter-400;
+    src: url(../fonts/inter/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-600;
+    src: url(../fonts/poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppins-400;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+
+/* Creative agency Global color CSS here */
+
+:root {
+    --body-bg-color : #0F1123;
+    --white-color : #FFFFFF;
+    --pink-color : #FF275B;
+    --text-color : #AFAFAF;
+    --orange-color : #FFB24B;
+    --light-black : #8793B0;
+    --container-bg-color : #272939;
+}
+
+/* Creative agency body bg color */
+
+.body {
+    background-color: var(--body-bg-color);
+}
+
+/* Creative agency highlighted text CSS here */
+
+span {
+    color: var(--pink-color);
+}
+
+/* Creative agency Global Button CSS here */
+
+.white-bg-btn {
+    background-color: var(--white-color);
+    color: var(--body-bg-color);
+    font-size: 18px;
+    font-family: inter-400;
+    line-height: 21.78px;
+    padding: 14px 16px;
+    gap: 8px;
+    border-radius: 4px;
+    border: none;
+}
+.pink-bg-btn {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    font-size: 20px;
+    font-family: inter-500;
+    line-height: 24px;
+    padding: 16px 20px;
+    gap: 8px;
+    border-radius: 4px;
+    border: none;
+}
+.btn-with-arrow{
+    background-color: transparent;
+    color: var(--white-color);
+    font-family: inter-500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 24px;
+    border: none;
+}
+.transparent-bg-btn {
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 20px;
+    font-family: inter-500;
+    line-height: 24px;
+    padding: 10px 12px;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--white-color);
+}
+.transparent-bg-btn:hover {
+    background-color: transparent;
+    color: var(--pink-color);
+    border: 1px solid var(--pink-color);
+    transition: ease-in 0.5s;
+    
+}
+
+/* Creative agency Global padding CSS here */
+
+.pt-95{
+    padding-top: 95px;
+}
+.pb-180{
+    padding-bottom: 180px;
+}
+.pb-120{
+    padding-bottom: 120px;
+}
+.pt-120{
+    padding-top: 120px;
+}
+.mt-48{
+   margin-top: 48px;
+
+}
+/* Creative agency Global paragraph line height and margin top here */
+
+.paragraph-18{
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: inter-400;
+    line-height: 26px;
+    margin-top: 16px;
+}
+
+/* Creative agency Custom Css start here */
+
+/* ===============================
+ Creative agency home Navbar 
+ =================================*/
+
+.home-navbar {
+    margin-top: 30px;
+}
+.home-navbar .home-navbar-container .home-navbar-item {
+    gap: 40px;
+}
+.home-navbar .home-navbar-container .home-navbar-item .home-navbar-item-list{
+    font-size: 18px;
+    font-family: inter-400;
+    line-height: 21.78px;
+}
+.home-navbar .home-navbar-container .home-navbar-item .home-navbar-item-list .nav-link {
+    color: var(--text-color);
+}
+.home-navbar .home-navbar-container .home-navbar-item .home-navbar-item-list #active{
+    position: relative;
+    color: var(--white-color);
+
+}
+.home-navbar .home-navbar-container .home-navbar-item .home-navbar-item-list #active::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 19px;
+    bottom: 0;
+    left: 8px;
+    background-color: var(--pink-color);
+}
+
+/* ==============================
+ Creative agency Home banner 
+ ================================ */
+
+.banner-section{
+    position: relative;
+}
+.banner-section .banner-container-shape-main{
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.banner-section .banner-container .row .banner-container-left .banner-container-left-heading{
+    color: var(--white-color);
+    font-size: 64px;
+    font-family: lora-500;
+    line-height: 81px;
+    
+
+}
+.banner-section .banner-container .row .banner-container-left .banner-container-left-btn {
+    margin-top: 40px;
+}
+.banner-section .banner-container .row .banner-container-right {
+    position: relative;
+}
+
+.banner-section .banner-container .row .banner-container-right .home-banner-right-pattern {
+    position: absolute;
+    top: -55px;
+    left: -47px;
+    z-index: -1;
+    
+}
+.banner-section .banner-container .row .banner-container-right .home-banner-right-shape--1 {
+    position: absolute;
+    top: -60px;
+    right: -95px;
+    z-index: -1;
+    
+}
+.banner-section .banner-container .row .banner-container-right .home-banner-right-shape--2 {
+    position: absolute;
+    bottom: -50px;
+    left: -15px;
+    
+    
+}
+
+/* ==============================
+ Creative agency helping hend 
+ ================================ */
+
+
+
+
+ .helping-hand-section .helping-hand-container .row .helping-hand-left{
+    position: relative;
+ }
+ .helping-hand-section .helping-hand-container .row .helping-hand-left .helping-heand-pattern{
+    position: absolute;
+    top: -62px;
+    left: -52px;
+    z-index: -1;
+    
+ }
+
+ .helping-hand-section .helping-hand-container .row .helping-hand-right{
+    padding-left: 50px;
+ }
+ .helping-hand-section .helping-hand-container .row .helping-hand-right .helping-hand-heading{
+    color: var(--white-color);
+    font-size: 48px;
+    font-family: lora-500;
+    line-height: 57px;
+    width: 555px;
+ }
+ .helping-hand-section .helping-hand-container .row .helping-hand-right .helping-hand-paragraph{
+    margin-bottom: 24px;
+    width: 555px;
+ }
+ .helping-hand-section .helping-hand-container .row .helping-hand-right .helping-hand-icon-text .helping-hand-icon{
+    width: 24px;
+    height: 24px;
+ }
+ .helping-hand-section .helping-hand-container .row .helping-hand-right .helping-hand-icon-text .helping-hand-text{
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: inter-400;
+    line-height: 24px;
+    padding-left: 10px;
+   
+ }
+
+
+
+ /* ==============================
+ Creative agency Service 
+ ================================ */
+
+ .service-section .service-container .row .service-heading {
+    width: 312px;
+    color: var(--white-color);
+    font-size: 48px;
+    font-family: lora-500;
+    line-height: 61px;
+
+ }
+
+ .service-section .service-container .service-card-group .service-card {
+    border: 1px solid #272939;
+    border-radius: 4px;
+    
+ }
+ .service-section .service-container .service-card-group .service-card .service-card-icon {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .service-section .service-container .service-card-group .service-card .card-body .card-heading {
+    color: var(--white-color);
+    font-size: 24px;
+    font-family: poppins-600;
+    line-height: 36px;
+    margin-top: 16px;
+
+ }
+ .service-section .service-container .service-card-group .service-card .card-body .card-paragraph {
+    width: 300px;
+    color: var(--light-black);
+    font-size: 18px;
+    font-family: poppins-400;
+    line-height: 27px;
+    margin-top: 16px;
+
+ }
+ .service-section .service-container .service-card-dash {
+    margin-top: 40px;
+ }
+ .service-section .service-container .service-card-dash .dash--1, .dash--3{
+    width: 16px;
+    height: 4px;
+    background-color: #333444;
+    margin-right: 5px;
+
+ }
+ .service-section .service-container .service-card-dash .dash--2{
+    width: 24px;
+    height: 4px;
+    background-color: var(--pink-color);
+    margin-right: 5px;
+
+ }
+
+
+
+ /* ==============================
+ Creative agency project 
+ ================================ */
+
+ .project-section .project-container .project-heading {
+    color: var(--white-color);
+    font-size: 48px;
+    font-family: lora-500;
+    line-height: 61px;
+   padding-bottom: 48px;
+}
+ .project-section .project-container .row .project-group .project-card .project-card-image {
+    width: 350px;
+    height: 444px;
+    position: relative;
+}
+ .project-section .project-container .row .project-group .project-card .card-body{
+    width: 325px;
+    height: 138px;
+    position: absolute;
+    background-color: var(--body-bg-color);
+    bottom: 12px;
+    left: 12px;
+    border-radius: 4px;
+    
+}
+ .project-section .project-container .row .project-group .project-card .card-body .project-card-heading{
+    color: var(--white-color);
+    font-size: 24px;
+    font-family: inter-600;
+    line-height: 29px;
+    
+}
+ .project-section .project-container .row .project-group .project-card .card-body .porject-card-btn {
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: inter-500;
+    line-height: 24px;
+    margin-top: 24px;
+    
+}
+
+
+
+ /* ==============================
+ Creative agency testimonia 
+ ================================ */
+
+ .testimonial-section .testimonial-container {
+    background-color: var(--container-bg-color);
+    border-radius: 4px;
+ }
+ .testimonial-section .testimonial-container .row .testimonial-left {
+   position: relative;
+   padding-left: 40px;
+ }
+ .testimonial-section .testimonial-container .row .testimonial-left .testimonial-pattern {
+   position: absolute;
+   top: -63px;
+   left: -63px;
+   z-index: -1;
+ }
+ .testimonial-section .testimonial-container .row .testimonial-left .testimonial-heading {
+    width: 394px;
+    color: var(--white-color);
+    font-size: 48px;
+    font-family: lora-500;
+    line-height: 61px;
+    padding-top: 72px;
+ }
+ .testimonial-section .testimonial-container .row .testimonial-left .project-paragraph {
+    width: 394px;
+    padding-bottom: 60px;
+ }
+ .testimonial-section .testimonial-container .row .testimonial-left .testimonial-divider {
+    width: 1px;
+    height: 275px;
+    background-color: #797983;
+    position: absolute;
+    left: 95%;
+    top: 50px;
+ }
+
+ .testimonial-section .testimonial-container .row .testimonial-right {
+    padding: 0px 40px;
+ }
+
+ .testimonial-section .testimonial-container .row .testimonial-right .testimonial-position {
+    margin-left: 20px;
+ }
+ .testimonial-section .testimonial-container .row .testimonial-right .testimonial-person-position .testimonial-person {
+   width: 72px;
+   height: 72px;
+ }
+ .testimonial-section .testimonial-container .row .testimonial-right .testimonial-position .testimonal-name {
+    color: var(--white-color);
+    font-size: 32px;
+    font-family: inter-500;
+    
+ }
+ .testimonial-section .testimonial-container .row .testimonial-right .testimonial-position .testimonial-title {
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: inter-400;
+    
+ }
+ .testimonial-section .testimonial-container .row .testimonial-right .person-opinion {
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: inter-400;
+    line-height: 21.78px;
+    margin-top: 16px;
+    text-align: justify;
+    
+ }
+ .testimonial-section .testimonial-container .row .testimonial-right .testimonial-dot-arrow .testionial-dot .dot-1 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--pink-color);
+    
+ }
+ .testimonial-section .testimonial-container .row .testimonial-right .testimonial-dot-arrow .testionial-dot .dot-2, .dot-3 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+   border: 1px solid #797983;
+   margin-left: 5px;
+    
+ }
+ .testimonial-section .testimonial-container .row .testimonial-right .testimonial-dot-arrow .testimonial-arrow .arrow-1 {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    
+ }
+ .testimonial-section .testimonial-container .row .testimonial-right .testimonial-dot-arrow .testimonial-arrow .arrow-2 {
+    width: 24px;
+    height: 24px;
+    
+    
+ }
+
+
+
+ /* ==============================
+ Creative agency Blog 
+ ================================ */
+
+ .blog-section .blog-container {
+    position: relative;
+}
+ .blog-section .blog-container .blog-pattern {
+    position: absolute;
+    bottom: -50px;
+    right: -45px;
+}
+ .blog-section .blog-container .blog-heading {
+    
+    color: var(--white-color);
+    font-size: 48px;
+    font-family: lora-500;
+    line-height: 61px;
+    
+
+ }
+ /* .blog-section .blog-container .blog-card {
+    margin-right: 24px;
+ } */
+ .blog-section .blog-container .blog-card .blog-title {
+    
+    color: var(--white-color);
+    font-size: 24px;
+    font-family: inter-600;
+    line-height: 29px;
+    padding-top: 24px;
+    
+
+ }
+ .blog-section .blog-container .blog-card .blog-paragraph {
+    width: 358px;
+    margin-bottom: 32px;
+
+ }
+
+ .blog-section .blog-container .blog-card .blog-card-row {
+    border-bottom: 1px solid var(--container-bg-color);
+ }
+ .blog-section .blog-container .blog-card .blog-card-row .blog-row-title-paragraph .blog-row-title {
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: poppins-600;
+    line-height: 24px;
+}
+ .blog-section .blog-container .blog-card .blog-card-row .blog-row-title-paragraph .blog-row-paragraph {
+    width: 225px;
+    color: var(--text-color);
+    font-size: 12px;
+    font-family: inter-400;
+    line-height: 24px;
+}
+ .blog-section .blog-container .blog-card .blog-card-row .blog-row-img {
+    width: 119px;
+    height: 103px;
+    margin-left: 20px;
+}
+
+
+/* ==============================
+ Creative agency pricing
+ ================================ */
+
+ .pricing-section .pricing-container .pricing-content .pricing-heading {
+    color: var(--white-color);
+    font-size: 48px;
+    font-family: lora-500;
+    line-height: 61px;
+    width: 364px;
+
+ }
+ .pricing-section .pricing-container .pricing-content .pricing-paragraph {
+    width: 364px;
+
+ }
+ .pricing-section .pricing-container .pricin-card {
+    margin-left: 110px;
+    background-color: var(--container-bg-color);
+    padding: 40px;
+    border-radius: 8px;
+    margin-right: 12px;
+
+ }
+ .pricing-section .pricing-container .pricin-card .pricing-title {
+    color: var(--orange-color);
+    font-size: 22px;
+    font-family: inter-600;
+    margin-bottom: 16px;
+}
+ .pricing-section .pricing-container .pricin-card .price-duration .pricing-price {
+    color: var(--white-color);
+    font-size: 22px;
+    font-family: inter-600;
+    margin-right: 10px;
+}
+ .pricing-section .pricing-container .pricin-card .price-duration .pricing-duration {
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: inter-600;
+}
+ .pricing-section .pricing-container .pricin-card .pricing-feature .pricing-feature-icon {
+    width: 24px;
+    height: 24px;
+
+ }
+ .pricing-section .pricing-container .pricin-card .pricing-feature .pricing-feature-text {
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: inter-400;
+    line-height: 24px;
+    padding-left: 10px;
+    
+
+ }
+ .pricing-section .pricing-container .pricin-card .pricing-btn {
+   color: var(--white-color);
+   background-color: var(--pink-color);
+   font-size: 20px;
+   font-family: inter-500;
+   padding: 16px 20px;
+   width: 230px;
+   border: none;
+   border-radius: 4px;
+   gap: 8px;
+   margin-top: 40px;
+
+ }
+
+ .pricing-section .pricing-container .pricin-card-transparent-bg{
+    background-color: transparent;
+    padding: 40px;
+    border: 1px solid #333444;
+    border-radius: 8px;
+    margin-left: 12px;
+}
+.pricing-section .pricing-container .pricin-card-transparent-bg .pricing-title {
+    color: var(--white-color);
+    font-size: 22px;
+    font-family: inter-600;
+    margin-bottom: 16px;
+}
+.pricing-section .pricing-container .pricin-card-transparent-bg .price-duration .pricing-price {
+    color: var(--white-color);
+    font-size: 22px;
+    font-family: inter-600;
+    margin-right: 10px;
+}
+.pricing-section .pricing-container .pricin-card-transparent-bg .price-duration .pricing-duration {
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: inter-600;
+}
+.pricing-section .pricing-container .pricin-card-transparent-bg .pricing-feature .pricing-feature-icon {
+    width: 24px;
+    height: 24px;
+}
+.pricing-section .pricing-container .pricin-card-transparent-bg .pricing-feature .pricing-feature-text {
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: inter-400;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.pricing-section .pricing-container .pricin-card-transparent-bg .pricing-transparent-btn {
+    color: var(--white-color);
+    font-size: 20px;
+    background-color: transparent;
+    font-family: inter-500;
+    padding: 16px 20px;
+    width: 230px;
+    border: 1px solid var(--white-color);
+    border-radius: 4px;
+    gap: 8px;
+    margin-top: 75px;
+}
+    
+
+
+
+/* ==============================
+ Creative agency footer 
+ ================================ */
+
+ .footer-section {
+    background-color: var(--container-bg-color);
+ }
+ .footer-section .footer-container .row .footer-left .footer-heading {
+    color: var(--white-color);
+    font-size: 48px;
+    font-family: lora-500;
+    line-height: 61px;
+    padding-top: 40px;
+ }
+
+ .footer-section .footer-container .row .footer-right {
+    position: relative;
+ }
+ .footer-section .footer-container .row .footer-right .footer-form-field {
+    width: 455px;
+    height: 72px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: inter-400;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    margin-top: 48px;
+    
+ }
+ .footer-section .footer-container .row .footer-right .footer-form-btn {
+    position: absolute;
+    right: 16px;
+    top: 56px;
+    
+    
+ }
+ .footer-section .footer-container .footer-logo-nav-icon {
+    margin-top: 80px;
+}
+ .footer-section .footer-container .footer-logo-nav-icon .footer-nav li {
+    padding-right: 40px;
+}
+ .footer-section .footer-container .footer-logo-nav-icon .footer-nav .footer-nav-link {
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: inter-400;
+}
+
+ .footer-section .footer-container .footer-logo-nav-icon .footer-social-icon .facebook, .twitter{
+    margin-right: 24px;
+}
+ .footer-section .footer-container .copyright{
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: inter-400;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/* ==================================================================================== creative agency About us custom css start here start here 
+=======================================================================================*/
+
+
+/* ==============================
+ Creative agency team 
+ ================================ */
+
+ .team-section .team-container .team-heading {
+    color: var(--white-color);
+    font-size: 48px;
+    font-family: lora-500;
+    line-height: 61px;
+}
+.team-section .team-container .row {
+    padding-top: 40px;
+}
+ .team-section .team-container .row .team-img{
+    width: 260px;
+}
+ .team-section .team-container .row .team-person{
+    background-color: var(--container-bg-color);
+    width: 260px;
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.team-section .team-container .row .team-person:hover .team-person-position .team-person-name{
+    color: var(--pink-color);
+    transition: linear 0.5s;
+}
+ .team-section .team-container .row .team-person .team-person-position .team-person-name {
+    color: var(--white-color);
+    font-size: 24px;
+    font-family: inter-600;
+    margin-bottom: 8px;
+}
+ .team-section .team-container .row .team-person .team-person-position .team-position {
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: inter-400;
+    
+}
+ .team-section .team-container .row .team-person .team-social .team-facebook {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 18px;
+}
+ .team-section .team-container .row .team-person .team-social .team-facebook .svg-img:hover {
+    fill: red;
+}
+.team-section .team-container .row .team-person .team-social .team-instagram {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* ==================================================================================== creative agency About us-2 custom css start here start here 
+=======================================================================================*/
+
+
+/* ==============================
+ Creative agency owner 
+ ================================ */
+
+ .owner-section .owner-container .owner-left .owner-img {
+   width: 573px;
+   height: 627px;
+   
+ }
+ .owner-section .owner-container .owner-right {
+   padding-left: 48px;
+ }
+ .owner-section .owner-container .owner-right .owner-position{
+   color: var(--text-color);
+   font-size: 24px;
+   font-family: inter-600;
+   
+ }
+ .owner-section .owner-container .owner-right .owner-name{
+   color: var(--white-color);
+   font-size: 48px;
+   font-family: lora-500;
+   line-height: 61px;
+   
+ }
+ .owner-section .owner-container .owner-right .owner-description-1, .owner-description-2{
+   
+   width: 548px;
+   
+ }
+ .owner-section .owner-container .owner-right .owner-social-media{
+   
+   width: 140px;
+   margin-top: 60px;
+   
+ }
+
+
+ /* ==================================================================================== creative agency Project page custom css start here start here 
+=======================================================================================*/
+
+
+/* ==============================
+ Creative agency project best work 
+ ================================ */
+
+ .project-best-work-section .project-best-work-container .project-best-work-heading {
+   width: 396px;
+   color: var(--white-color);
+   font-size: 48px;
+   font-family: lora-500;
+   line-height: 61px;
+
+ }
+ .project-best-work-section .project-best-work-container .project-best-work {
+   margin-top: 48px;
+   position: relative;
+
+ }
+ .project-best-work-section .project-best-work-container .project-best-work .project-best-work-pattern {
+   position: absolute;
+   top: -67px;
+   left: -57px;
+
+ }
+ .project-best-work-section .project-best-work-container .project-best-work-img-1 {
+   width: 550px;
+   position: relative;
+
+ }
+ .project-best-work-section .project-best-work-container #best-work-below-img {
+   margin-top: 24px;
+
+ }
+ .project-best-work-section .project-best-work-container #best-work-below-img-2 {
+   margin-top: -70px;
+
+ }
+ .project-best-work-section .project-best-work-container .project-best-work-body {
+   width: 525px;
+   height: 138px;
+   position: absolute;
+   background-color: var(--body-bg-color);
+   bottom: 20px;
+   left: 20px;
+   border-radius: 4px;
+   padding: 16px;
+
+ }
+ .project-best-work-section .project-best-work-container .project-best-work-body .project-best-work-title {
+   color: var(--white-color);
+   font-size: 24px;
+   font-family: inter-600;
+   line-height: 29px;
+
+ }
+ .project-best-work-section .project-best-work-container .project-best-work-body .porject-best-work-btn {
+   color: var(--text-color);
+    font-size: 18px;
+    font-family: inter-500;
+    line-height: 24px;
+    margin-top: 24px;
+ }
+ .project-best-work-section .project-best-work-container .project-best-work-body .porject-best-work-btn:hover {
+   color: var(--pink-color);
+   transition: linear 0.5s;
+  
+ }
+
+
+ /* ==================================================================================== creative agency Project_2 page custom css start here start here 
+=======================================================================================*/
+
+
+/* ==============================
+ Creative agency project_2 banner
+ ================================*/
+ 
+ 
+ .project-2-banner .project-2-container .project-2-heading {
+   width: 863px;
+
+   color: var(--white-color);
+   font-size: 64px;
+   font-family: lora-500;
+   line-height: 81px;
+   padding-bottom: 80px;
+ }
+
+ .project-2-banner .project-2-container .project-2-left {
+   position: relative;
+ }
+ .project-2-banner .project-2-container .project-2-left .project-2-banner-pattern {
+   position: absolute;
+   top: -62px;
+   left: -52px;
+   z-index: -1;
+ }
+ .project-2-banner .project-2-container .project-2-left .project-2-banner-img {
+  width: 550px;
+  height: 473px;
+ }
+ .project-2-banner .project-2-container .project-2-right .project-2-banner-title {
+  color: var(--white-color);
+  font-size: 24px;
+  font-family: inter-600;
+ }
+ .project-2-banner .project-2-container .project-2-right .project-2-banner-paragraph {
+  width: 549px;
+  margin-bottom: 25px;
+ }
+
+
+
+ /* ====================================
+ Creative agency project_2 About section
+ ========================================*/
+
+ .project-2-about .project-2-about-container .project-2-about-heading {
+   color: var(--white-color);
+   font-size: 48px;
+   font-family: lora-500;
+   line-height: 61px;
+   margin-bottom: 48px;
+ }
+ .project-2-about .project-2-about-container .project-2-about-left .project-2-about-left-feature {
+   width: 250px;
+ }
+ .project-2-about .project-2-about-container .project-2-about-left #client-feature {
+   width: 270px;
+ }
+ .project-2-about .project-2-about-container .project-2-about-left .project-2-about-left-feature .project-2-about-date, .project-2-about-client, .project-2-about-type, .project-2-about-duration {
+   color: var(--white-color);
+   font-size: 24px;
+   font-family: inter-600;
+   line-height: 29px;
+ }
+ .project-2-about .project-2-about-container .project-2-about-right .project-2-about-details .details {
+   color: var(--white-color);
+   font-size: 24px;
+   font-family: inter-600;
+   line-height: 29px;
+   
+ }
+ .project-2-about .project-2-about-container .project-2-about-right .project-2-about-details .description {
+   width: 549px;
+   
+ }
+
+ /* ====================================
+ Creative agency project_2 visual design section
+ ========================================*/
+
+ .visual-section .visual-container .visual-container-heading {
+   color: var(--white-color);
+   font-size: 48px;
+   font-family: lora-500;
+   line-height: 61px;
+   margin-bottom: 60px;
+ }
+ .visual-section .visual-container .visual-container-img .visual-container-img--1, .visual-container-img--2 {
+   width: 570px;
+   padding-right: 24px;
+ }
+ .visual-section .visual-container .visual-container-full-img {
+   width: 100%;
+   height: 571px;
+   margin-top: 24px;
+ }
+
+
+
+ 
+ /* ==================================================================================== creative agency Blog page custom css start here start here 
+=======================================================================================*/
+
+
+/* ==============================
+ Creative agency Blog banner
+ ================================*/
+
+ .blog-banner-section .blog-banner-container .blog-banner-heading {
+   color: var(--white-color);
+   font-size: 64px;
+   font-family: lora-500;
+   line-height: 81px;
+   margin-bottom: 80px;
+ }
+ .blog-banner-section .blog-banner-container .blog-banner-paragraph {
+   width: 529px;
+   margin-left: 20px;
+ }
+ 
+ .blog-banner-section .blog-banner-container {
+   position: relative;
+  
+   
+ }
+ .blog-banner-section .blog-banner-container .blog-banner-pattern {
+   position: absolute;
+   top: 178px;
+   left: -78px;
+   z-index: -1;
+  
+   
+ }
+ .blog-banner-section .blog-banner-container .blog-banner-card-group .blog-banner-card .blog-banner-card-title {
+   color: var(--white-color);
+   font-size: 24px;
+   font-family: inter-600;
+   line-height: 29px;
+   margin-top: 24px;
+  
+   
+ }
+ .blog-banner-section .blog-banner-container .blog-banner-card-group .blog-banner-card .blog-banner-card-title:hover {
+   color: var(--pink-color);
+   cursor: pointer;
+   transition: ease 0.5s;
+   
+ }
+ .blog-banner-section .blog-banner-container .blog-banner-card-group .blog-banner-card .blog-banner-card-publisher {
+   margin-top: 32px;
+   width: 360px;
+ }
+ .blog-banner-section .blog-banner-container .blog-banner-card-group .blog-banner-card .blog-banner-card-publisher .blog-banner-publish-date {
+   color: var(--orange-color);
+   font-size: 16px;
+   font-family: inter-400;
+ }
+ .blog-banner-section .blog-banner-container .blog-banner-card-group .blog-banner-card .blog-banner-card-publisher .blog-banner-publish-author {
+   color: var(--white-color);
+   font-size: 16px;
+   font-family: inter-400;
+ }
+ /* .blog-banner-section .blog-banner-container .blog-banner-card-group .blog-banner-card .blog-banner-card-paragraph {
+   width: 374px;
+  
+ } */
+
+
+ /* ========================================
+ Creative agency Blog desing and art section
+ ===========================================*/
+
+ .blog-design-section .blog-design-container {
+   background-color: var(--container-bg-color);
+   padding: 40px 100px 40px 40px;
+   border-radius: 8px;
+ }
+ .blog-design-section .blog-design-container .blog-design-heading {
+   width: 1030px;
+   color: var(--white-color);
+   font-size: 48px;
+   font-family: lora-500;
+ }
+
+ 
+ /* ========================================
+ Creative agency Blog-2 section
+ ===========================================*/
+
+
+ .blog-section-2 .blog-container-2 .blog-card-group-2 .blog-card-2-title {
+   color: var(--white-color);
+   font-size: 24px;
+   font-family: inter-600;
+   line-height: 29px;
+   margin-top: 24px;
+
+ }
+ .blog-section-2 .blog-container-2 .blog-card-group-2 .blog-card-2-title:hover {
+   color: var(--pink-color);
+   cursor: pointer;
+   transition: ease 0.5s;
+
+ }
+ .blog-section-2 .blog-container-2 .blog-card-group-2 .blog-card-2-paragraph {
+   margin-top: 32px;
+   width: 360px;
+
+ }
+ .blog-section-2 .blog-container-2 .blog-card-group-2 .blog-card-2-publisher .blog-publish-2-date {
+   color: var(--orange-color);
+   font-size: 16px;
+   font-family: inter-400;
+ }
+ .blog-section-2 .blog-container-2 .blog-card-group-2 .blog-card-2-publisher .blog-publish-2-author {
+   color: var(--white-color);
+   font-size: 16px;
+   font-family: inter-400;
+ }
+
+
+ /* ==================================================================================== creative agency Blog-2 page custom css start here start here 
+=======================================================================================*/
+
+
+/* ==============================
+ Creative agency Blog-2 banner
+ ================================*/
+
+ .blog-2-banner-section .blog-2-container .blog-2-banner-heaidng {
+   width: 800px;
+   color: var(--white-color);
+   font-size: 64px;
+   font-family: lora-500;
+   line-height: 81px;
+   margin-bottom: 16px;
+ }
+ .blog-2-banner-section .blog-2-container .blog-banner-paragraph {
+   width: 1150px;
+   margin-bottom: 40px;
+ }
+ .blog-2-banner-section .blog-2-container .blog-2-banner-img {
+   width: 100%
+ }
+ .blog-2-banner-section .blog-2-container .blog-2-banner-paragraph-2  {
+   width: 1169px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+ }
+
+ /* ==============================
+ Creative agency Blog-2 Design art section
+ ================================*/
+
+ .blog-2-design-section .blog-2-design-container .blog-2-design-heading {
+   width: 1150px;
+   color: var(--white-color);
+   font-size: 48px;
+   font-family: lora-500;
+   line-height: 61px;
+}
+ .blog-2-design-section .blog-2-design-container .blog-2-author  {
+  color: var(--pink-color);
+  font-size: 24px;
+  font-family: inter-500;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+ .blog-2-design-section .blog-2-design-container .blog-2-design-left .blog-2-design-tag {
+  color: var(--text-color);
+  font-size: 24px;
+  font-family: inter-500;
+  line-height: 60px;
+} 
+ .blog-2-design-section .blog-2-design-container .blog-2-design-left .tag {
+  color: var(--white-color);
+  margin-right: 10px;
+} 
+ .blog-2-design-section .blog-2-design-container .blog-2-design-right .blog-2-design-img  {
+  width: 540px;
+  margin-left: 25px;
+  padding-top: 24px;
+}
+ .blog-2-design-section .blog-2-design-container .social-share  {
+  position: absolute;
+  right: 0;
+  margin-top: 70px;
+}
+ .blog-2-design-section .blog-2-design-container .social-share .share  {
+   
+  color: var(--white-color);
+  font-size: 24px;
+  font-family: inter-500;
+  margin-right: 8px;
+}
+ .blog-2-design-section .blog-2-design-container .social-share .social-icon-fb, .social-icon-twitter  {
+
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+
+/* ==================================================================================== creative agency Contact page custom css start here start here 
+=======================================================================================*/
+
+
+ /* ==============================
+ Creative agency Contact section
+ ================================*/
+
+ 
+ .contact-section .contact-container .contact-left-part .contact-heading {
+   width: 398px;
+   color: var(--white-color);
+   font-size: 64px;
+   font-family: lora-500;
+   line-height: 81px;
+   margin-bottom: 16px;
+ }
+ .contact-section .contact-container .contact-left-part .contact-paragraph {
+   width: 398px;
+   margin-bottom: 40px;
+ }
+ .contact-section .contact-container .contact-left-part .contact-info-title {
+   color: var(--white-color);
+   font-size: 24px;
+   font-family: inter-600;
+   line-height: 29px;
+   margin-bottom: 16px;
+ }
+ .contact-section .contact-container .contact-left-part .contact-info-email {
+   margin-bottom: 10px;
+ }
+ .contact-section .contact-container .contact-left-part .contact-info-email .email {
+   width: 24px;
+   height: 24px;
+   
+ }
+ .contact-section .contact-container .contact-left-part .contact-info-email .email-address {
+   color: var(--text-color);
+   font-size: 18px;
+   font-family: inter-400;
+   margin-left: 10px;
+   
+ }
+ .contact-section .contact-container .contact-left-part .contact-info-call .call {
+   width: 24px;
+   height: 24px;
+   
+ }
+ .contact-section .contact-container .contact-left-part .contact-info-call .call-address {
+   color: var(--text-color);
+   font-size: 18px;
+   font-family: inter-400;
+   margin-left: 10px;
+   
+ }
+ .contact-section .contact-container .contact-left-part .contact-social-media {
+   color: var(--white-color);
+   font-size: 24px;
+   font-family: inter-600;
+   line-height: 29px;
+   margin-top: 40px;
+
+ }
+ .contact-section .contact-container .contact-right-part form label {
+   color: var(--white-color);
+   font-size: 20px;
+   font-family: inter-500;
+   line-height: 29px;
+   margin-bottom: 10px;
+
+ }
+ .contact-section .contact-container .contact-right-part form input {
+   
+   height: 50px;
+   border-radius: 4px;
+   margin-bottom: 24px;
+   border: 1px solid var(--text-color);
+   color: var(--text-color);
+   font-size: 18px;
+
+ }
+  .contact-section .contact-container .contact-right-part form textarea {
+   border-radius: 4px;
+   margin-bottom: 24px;
+   border: 1px solid var(--text-color);
+   color: var(--text-color);
+   font-size: 18px;
+
+ }
+ .contact-section .contact-container .contact-right-part form .submit-btn {
+   width: 156px;
+   margin-left: 16px;
+
+ }
+ .contact-section .contact-container .contact-right-part .form-budget {
+   color: var(--white-color);
+   font-size: 20px;
+   font-family: inter-500;
+   line-height: 29px;
+   margin-bottom: 10px;
+
+ }
+ .contact-section .contact-container .contact-right-part .form-btn-group {
+   margin-bottom: 40px;
+
+ }
+ .contact-section .contact-container .contact-right-part .form-btn-group .form-btn {
+   color: var(--text-color);
+   background-color: transparent;
+   font-size: 18px;
+   font-family: inter-400;
+   padding: 11px;
+   border: 1px solid var(--text-color);
+   border-radius: 10px;
+   margin-right: 24px;
+
+ }
+
+
+
+
+
